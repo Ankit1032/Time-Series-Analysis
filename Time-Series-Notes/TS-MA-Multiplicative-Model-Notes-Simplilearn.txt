@@ -1,0 +1,71 @@
+Examples for Time Series Analysis
+1. Daily Stock Price
+2. Weekly Interest Rates
+3. Sales Figures
+-Where the outcome(independent variable) in dependent on time. In such scenarios, we use Time-Series Forecasting
+
+-A Time series is a sequence of data being recorded at specific time intervals.
+-These data points (historic/past values) are analyzed to forecast a future
+-it is time-dependent
+
+#Time Series is affected by four major components
+1. Trend
+2. Seasonality
+3. Cyclicity
+4. Irregularity
+
+1. Trend
+- Trend is an increase or decrease in the series over a period of time, it persists over a long period of time
+- Example : Population growth over the years can be seen as an upward trend
+
+2. Seasonality
+- Seasonality is regular pattern of up and down fluctuations. It is a short term variation occuring due to seasonal factors.
+- Example : Sales of ice-cream increases during summer season.
+
+3. Cyclicity
+- Cyclicity is kind of similar to seasonality but the duration between two cycles are much longer unlike seasonality.
+- Example : 5 years of economic growth, followed by 2 
+- Other examples :  the housing market might show cyclicity with periods of booms and busts occurring over several years. Similarly, the stock market might show cyclicity with periods of bullish and bearish trends.
+
+4. Irregularity
+- Irregularity refers to random or unpredictable fluctuations in the values of a time series that cannot be attributed to any specific trend, seasonality, or cyclicity.
+- A sudden unexpected event such as a natural disaster or a pandemic can cause irregularity in the sales of a business or the number of passengers traveling through an airport.
+
+
+#When NOT to use Time Series Analysis
+1. When values are constant over a period of time
+
+2. When the values are changing but in a SIN/COS graph wise.
+
+Note : Before forecasting, you should make sure that the Time Series data is stationary, before you apply models like ARIMA.
+
+A stationary time series is one whose statistical properties such as mean, variance, and autocorrelation do not change over time. In other words, a stationary time series has a constant mean, constant variance, and constant autocorrelation, and the pattern in the data remains consistent over time.
+
+On the other hand, a non-stationary time series is one whose statistical properties change over time. For example, the mean, variance, and autocorrelation of a non-stationary time series may increase or decrease over time, or the pattern in the data may change in a way that makes it difficult to predict future values. 
+
+If a data contains trend or cyclicity or seasonality or irregularity, it a non-stationary data
+
+Non-stationary time series data can make it challenging to perform time series analysis, as the changing properties of the data can make it difficult to identify trends, seasonality, and other patterns in the data. In order to perform time series analysis on non-stationary data, techniques such as differencing and detrending may be used to transform the data into a stationary form.
+
+#Moving Average Method
+-A moving average (MA) is a stock indicator commonly used in technical analysis, used to help smooth out price data by creating a constantly updated average price.
+
+Suppose we have sales data
+Jan 129
+Feb 134
+March 122
+
+We want to forecast April sales using moving avg so.
+April sales = (129+134+122)/3 = 128.33
+-The above is called moving avg. three(3 period moving avergae) as we used 3 data points to forecast
+
+Centered moving average - 
+When you center the moving averages, they are placed at the center of the range rather than the end of it.
+
+# Multiplicative Model
+In the multiplicative model, the original time series is expressed as the product of trend, seasonal and irregular components.
+
+
+
+
+
