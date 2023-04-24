@@ -1,0 +1,35 @@
+Regression : Used to predict continuous value of an item based on certain parameters.
+
+Auto : Uses its own past values to predict future values.
+Correlation : An indicator of relationship between two variables.
+
+ACF(Auto-Correlation Function) : Relationship of a variable with its previous time time period values(Lags)
+Pearson's Correlation Coefficient): [-1 , 1]
+1: indicates a very strong Correlation
+-1 : indicates a negative Correlation
+
+ACF : It takes into account the direct and indirect effect of values in Previous time lags with the current time period
+
+(PACF) Partial Auto-Correlation Function : It takes into account only direct effects of Values in previous time lags with the current time period.
+
+# In case of AUTO-REGRESSION, we use PACF.
+
+
+--My Way of explanation between the difference between ACF and PACF
+
+so to get which time period lag gives the best correlation, we keep plotting 
+	plot 1= corr(Yt , Yt-1)
+	plot 2 = corr(Yt , Yt-2)
+	plot 3= corr(Yt , Yt-3)
+	...
+	plot k= corr(Yt , Yt-k)
+and then check the best correlation
+
+# The problem with ACF is when we calculating the corr(Yt , Y(t-2) ),we also know that Y(t-1) is indirectly influencing the correlation calculation. So, here comes PACF which removes the indirect correlation effect Y(t-1) while calculating corr(Yt, Y(t-2) ).
+
+
+
+	
+	
+
+
