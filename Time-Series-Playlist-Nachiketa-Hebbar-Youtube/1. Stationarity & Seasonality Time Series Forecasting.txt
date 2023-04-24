@@ -1,0 +1,45 @@
+# Stationarity 
+It means the statistical properties more or less, are same over time.
+Those properties are:
+1. Constant Mean
+2. Constant Variance
+3. No Seasonality
+
+#Seasonality : Means repeating patterns(Fluctuations) over time.
+
+Note : Your data should be stationary if you want to create a Time-Series Model out of it.
+
+#You Can find out if your data is stationary or not by plotting it year, quaterly, month, week or day wise.
+
+# Ways to check if data is stationary
+1. Visual Inspection(Graph Plotting)
+2. GLobal vs Local Check
+	- Global : find mean of the whole dataset
+	- local : find mean of multiple samples in dataset
+	- Now, check if both global and local mean almost matches.
+	- if matches, then data is stationary else not stationary
+	
+3. There are some statistical tests to find out if data is stationary or not like:
+	a. ADG(Augmented Dickey-Fuller) Test
+	b. KPPS Test
+	
+# Once you find out that your data is not stationary, you will have to work to convert that data into stationary in order to make a time series model with it.
+
+# Some techniques to convert data into stationary
+1. Differencing : Subtracting the time series which the values at different time period.
+For example FIRST ORDER DIFFERENCING:
+This means we subtract the current value with the previous time period value.
+Similarly you can go for Second/Third Order Differencing.
+
+2. Log Operation : can be used when you graph is increasing exponentially.
+
+3. Seasonal Differencing: So instead of subtracting the value from previous time period, we are subtracting from previous time cycle, when it was repeating
+-> Y(t) - Y(t-N)
+
+4.  
+
+
+
+
+
+
