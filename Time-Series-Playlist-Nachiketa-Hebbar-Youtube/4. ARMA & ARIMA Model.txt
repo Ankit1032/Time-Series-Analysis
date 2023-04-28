@@ -31,7 +31,7 @@ ARMA Model : Combination of AR and MA Model
 #WHAT IS ARIMA [Auto Regression Integrated Moving Average]
 	a. ARIMA is almost ARMA, but the difference is that we first convert the Non-Stationary series into Stationary Series and then perform ARIMA.
 	
-	b. "Integrated" : referes to a differencing operation which we need to do to convert non stationary series into stationary. Sp, we perform difference operation on current value minus previous time value.
+	b. "Integrated" : referes to a differencing operation which we need to do to convert non stationary series into stationary. So, we perform difference operation on current value minus previous time value.
 	For example: we can do y(t) - y(t-1)
 	
 	c. Non-stationary means the average value of the graph is constantly increasing/decreasing and never almost constant.
@@ -40,6 +40,10 @@ ARMA Model : Combination of AR and MA Model
 		p: Order of AR Model
 		d: Order of differecing to get stationary series
 		q: Order of MA Model
+	
+	Stationarity means :
+		a. The graph should have a almost constant mean and variance. The Time Series can fluctuate by the fluctuation should be constant.
+		b. There should not be any trends or repeating patterns.
 	
 	
 	
