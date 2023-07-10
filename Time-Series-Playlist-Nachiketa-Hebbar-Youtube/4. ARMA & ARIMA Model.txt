@@ -1,15 +1,15 @@
-ARMA : Auto Regressive Moving Average
-ARIMA : Auto Regressive Integrated Moving Average
+ARMA: Auto Regressive Moving Average
+ARIMA: Auto Regressive Integrated Moving Average
 
-AR[Auto-Regression] : Uses past values to make a prediction
+AR[Auto-Regression]: Uses past values to make a prediction
 	eq. y(t) = β0 + β1Y(t-1) + ε1
 	-> AR(1)
-	y(t) : Is the value for which we are predicting the value at time t
-	Y(t-1) : Is the past value of time t-1
+	y(t): Is the value for which we are predicting the value at time t
+	Y(t-1): Is the past value of time t-1
 	β0 : Constant
-	ε1 : Current Error
+	ε1: Current Error
 
-MA[Moving Average] : Uses past errors to make a prediction
+MA[Moving Average]: Uses past errors to make a prediction
 	eq. y(t) = β0 + θ1ε(t-1) + ε1
 	-> MA(1)
 	ε(t-1) : Error at time t-1
@@ -25,24 +25,24 @@ ARMA Model : Combination of AR and MA Model
 	b. Used to find order of Moving Average Model.
 	
 3. PACF[Partial Auto-Correlation function]
-	a. Measures only direct effect of previous time lags on current valye
-	b. Used to find orde of Auto Regression Model
+	a. Measures only the direct effect of previous time lags on current value
+	b. Used to find order of Auto Regression Model
 	
 #WHAT IS ARIMA [Auto Regression Integrated Moving Average]
 	a. ARIMA is almost ARMA, but the difference is that we first convert the Non-Stationary series into Stationary Series and then perform ARIMA.
 	
-	b. "Integrated" : referes to a differencing operation which we need to do to convert non stationary series into stationary. So, we perform difference operation on current value minus previous time value.
+	b. "Integrated": refers to a differencing operation that we need to do to convert non-stationary series into stationary. So, we perform a difference operation on the current value minus the previous time value.
 	For example: we can do y(t) - y(t-1)
 	
 	c. Non-stationary means the average value of the graph is constantly increasing/decreasing and never almost constant.
 	
 	d. ARIMA(p,d,q) 
 		p: Order of AR Model
-		d: Order of differecing to get stationary series
+		d: Order of differencing to get stationary series
 		q: Order of MA Model
 	
 	Stationarity means :
-		a. The graph should have a almost constant mean and variance. The Time Series can fluctuate by the fluctuation should be constant.
+		a. The graph should have an almost constant mean and variance. The Time Series can fluctuate by the fluctuation should be constant.
 		b. There should not be any trends or repeating patterns.
 	
 	
